@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0% 20%;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 100%
+}
+
+#locations {
+    list-style-type: none;
+    float: left;
+}
+
+#locations li {
+    display: inline;
+    margin-right: 25px;
+}
