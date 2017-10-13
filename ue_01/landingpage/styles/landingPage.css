@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-image: url("../img/bg.jpg");
+    background-image: url("https://static.pexels.com/photos/370799/pexels-photo-370799.jpeg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -10,13 +10,26 @@ html {
 body {
     margin: 0% 20%;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     min-height: 100%
 }
 
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
 #locations {
+    margin: 0px;
+    padding: 0px;
     list-style-type: none;
-    float: left;
 }
 
 #locations li {
