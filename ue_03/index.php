@@ -32,7 +32,7 @@
        setcookie("time", date("H:i:s"));
     ?>
     <br><br>
-    <div class="form-group" style="width: 50%">
+    <div class="form-group" style="width: 33%">
     <form action="" method="post">
       <label>Name:</label>
       <div class="input-group">
