@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form action="register_post.php" method="post">
+      Benutzername:
+      <br>
+      <input type="text" name="user">
+      <br>
+      Passwort:
+      <br>
+      <input type="password" name="pw">
+      <br>
+      <label>Note:</label>
+      <div class="input-group">
+	<span class="input-group-addon">
+	  <i class="glyphicon glyphicon-education"></i>
+	</span>
+      <select class="form-control" name="grade">
+	<option value="1">sehr gut</option>
+	<option value="2">gut</option>
+	<option value="3">befriedigend</option>
+	<option value="4">ausreichend</option>
+	<option value="5">mangelhaft</option>
+	<option value="6">ungenügend</option>
+      </select>
+      </div>
+      <input type="submit" value="Registrieren">
+    </form>
+  </body>
+</html>
