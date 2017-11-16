@@ -1,0 +1,53 @@
+<!DOCTYPE html >
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>JavaScript JSON.stringify </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h1 id="Überschrift">Hier kommunizieren wir über AJAX mittels JSON.stringify</h1>
+<button>Los geht es</button>
+<script type="text/javascript">
+   $(function() { 
+        $("button").click(function(){
+   
+            var person = { 
+              Name: "Volker Sander",
+              Adresse    :   "Heinrich-Mußmann-Str. 1", 
+              Stadt       :  "Jülich", 
+              Postleitzahl :   52428
+             };
+            
+
+   
+    var pj=JSON.stringify( person);
+
+    
+    
+    $("#Überschrift").html(person.Stadt);
+    
+    $.ajax({
+        url: 'ajax_test.php',
+        type: "POST",
+        contentType: "application/json",
+        charSet: "utf-8",
+        dataType: "json",
+        data: pj,
+            timeout: 5000,
+        success:  function(output) {
+           
+            alert(output.Name+" wohnt in "+output.Stadt);
+            $("#Überschrift").html(output.Stadt);
+           
+         },
+        error: function(xhr, ajaxOptions, thrownError) {
+             alert("---->" + xhr.status + " " + thrownError);
+         }
+        
+        }  );
+     });
+   });
+</script>
+</body>
+</html>
