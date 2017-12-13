@@ -1,0 +1,15 @@
+{
+    "name": "Java_REST",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+        "bootstrap": "3.x.x",
+        "jquery": "3.x.x"
+    },
+    "devDependencies": {
+    }
+}
